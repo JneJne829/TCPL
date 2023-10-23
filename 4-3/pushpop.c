@@ -5,6 +5,11 @@
 int sp = 0;
 double val[MAXOP] = {0};
 
+void clear(void){
+    sp = 0;
+    return;
+}
+
 void push(double f){
     if(sp<100)
         val[sp++] = f;
